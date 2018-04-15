@@ -28,6 +28,7 @@ describe('AddTodo component', () => {
     it('Should exist', () => {
       expect(component.find('.todo-submit').length).toEqual(1);
     });
+
     it('Should call the submitTodo function when clicked', () => {
       component = mount(<AddTodo submitTodo={submitMock} />);
       expect(submitMock.mock.calls.length).toEqual(0);
