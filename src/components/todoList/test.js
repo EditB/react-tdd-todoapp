@@ -9,7 +9,6 @@ configure({ adapter: new Adapter() });
 
 describe('TodoList component', () => {
   const deleteMock = jest.fn();
-
   const props = {
     todos: [
       {
