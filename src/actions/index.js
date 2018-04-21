@@ -29,6 +29,12 @@ const actions = {
     };
   },
 
+  inputChanged(inputText) {
+    return {
+      type: types.INPUT_CHANGED,
+      inputText,
+    };
+  },
 };
 
 export default actions;

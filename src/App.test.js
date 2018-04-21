@@ -16,6 +16,9 @@ it('App renders without crashing', () => {
     todos={[]}
     deleteTodo={mockFunction}
     undeleteTodo={mockFunction}
+    inputChanged={mockFunction}
+    disableAddTodo
+    disableUndelete
   />);
   expect(component.exists()).toEqual(true);
 });

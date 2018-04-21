@@ -3,6 +3,8 @@ import types from '../constants/';
 export const initialState = {
   todos: [],
   deleted: {},
+  disableAddTodo: false,
+  disableUndelete: true,
 };
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -16,6 +18,7 @@ export const reducer = (state = initialState, action) => {
             text: action.text,
           },
         ],
+        disableAddTodo: false,
       };
 
     case types.DELETE_TODO:
@@ -27,6 +30,7 @@ export const reducer = (state = initialState, action) => {
           )),
         ],
         deleted: state.todos.filter(todo => todo.id === action.id)[0],
+        disableUndelete: false,
       };
 
     case types.UNDELETE_TODO:
@@ -37,6 +41,21 @@ export const reducer = (state = initialState, action) => {
           state.deleted,
         ],
         deleted: {},
+        disableUndelete: true,
+      };
+
+    case types.INPUT_CHANGED:
+      if (action.inputText) {
+        /* eslint-disable no-console */
+        console.log('text changed');
+        /* eslint-enable no-console */
+        return {
+          ...state,
+          disableAddTodo: false,
+        };
+      }
+      return {
+        ...state,
       };
 
     default:
