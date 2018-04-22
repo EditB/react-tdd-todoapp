@@ -26,3 +26,35 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.todo-submit, .todo-input {
+  margin-right: 10px;
+}
+
+.todo-delete {
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+button {
+  border-radius: 2px;
+  background-color: #f5effc;
+  color: #020260;
+}
+
+h1 {
+  color: #7004f4;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #7004f4;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7004f4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #7004f4;
+}

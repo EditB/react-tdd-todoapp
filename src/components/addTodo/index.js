@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AddTodo = ({ submitTodo, undeleteTodo, inputChanged, disableAddTodo, disableUndelete }) => {
+const AddTodo = ({
+  submitTodo, undeleteTodo, inputChanged, disableAddTodo, disableUndelete,
+}) => {
   let input;
   return (
     <div>
@@ -18,6 +20,7 @@ const AddTodo = ({ submitTodo, undeleteTodo, inputChanged, disableAddTodo, disab
             input = element;
           }}
           onChange={() => inputChanged(input.vlaue)}
+          placeholder="Write your todo"
         />
 
         <button type="submit" className="todo-submit" disabled={disableAddTodo}>
