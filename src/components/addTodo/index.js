@@ -20,11 +20,11 @@ const AddTodo = ({
             input = element;
           }}
           onChange={() => inputChanged(input.vlaue)}
-          placeholder="Write your todo"
+          placeholder="Write your task"
         />
 
         <button type="submit" className="todo-submit" disabled={disableAddTodo}>
-          Add Todo
+          Add a Task
         </button>
 
         <button

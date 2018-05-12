@@ -18,9 +18,11 @@ const TodoList = ({ todos, deleteTodo }) => {
   ));
 
   return (
-    <ul>
-      {todoItems}
-    </ul>
+    <div id="taskList">
+      <ul>
+        {todoItems}
+      </ul>
+    </div>
   );
 };
 

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-size: 3em;
+  background-color: #d4d5f9;
 }
 
 .App-logo {
@@ -27,23 +29,52 @@
   to { transform: rotate(360deg); }
 }
 
-.todo-submit, .todo-input {
+.todo-input {
   margin-right: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.todo-submit{
+  background-color: #cba4fc;
 }
 
 .todo-delete {
   margin-right: 12px;
-  margin-bottom: 8px;
+  background-color: #f49377;
+}
+
+.todo-undelete {
+  background-color: #7bd18c;
+  margin-left: 10px;
 }
 
 button {
   border-radius: 2px;
-  background-color: #f5effc;
   color: #020260;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+ul li{
+  margin: 20px;
+  background-color: #f9edf9;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 h1 {
   color: #7004f4;
+}
+
+#taskList{
+  padding: 20px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

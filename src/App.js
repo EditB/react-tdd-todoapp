@@ -15,8 +15,8 @@ export const App = ({
   disableAddTodo,
   disableUndelete,
 }) => (
-  <div>
-    <h1>Todo list</h1>
+  <div className="App">
+    <h1>Task List</h1>
 
     <AddTodo
       submitTodo={submitTodo}
