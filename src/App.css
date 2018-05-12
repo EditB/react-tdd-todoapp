@@ -31,8 +31,10 @@
 
 .todo-input {
   margin-right: 10px;
+  margin-bottom: 15px;
   padding: 20px;
   font-size: 20px;
+  width: 380px;
 }
 
 .todo-submit{
@@ -55,6 +57,7 @@ button {
   padding: 20px;
   font-size: 25px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 ul {

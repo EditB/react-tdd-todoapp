@@ -21,7 +21,7 @@ const AddTodo = ({
           }}
           onChange={() => inputChanged(input.vlaue)}
           placeholder="Write your task"
-        />
+        /><br />
 
         <button type="submit" className="todo-submit" disabled={disableAddTodo}>
           Add a Task
